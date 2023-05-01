@@ -12,3 +12,17 @@ module.exports.run = async () => {
 
   await browser.close();
 };
+
+module.exports.getJobs = () => jobs;
+
+function addJob(title, company, ...technologies) {
+  if (jobs) {
+    const job = { title, company, technologies };
+    jobs.push(job);
+  }
+}
+
+async function getPropertyValue(element, propertyName) {
+  const property = await element.getProperty(propertyName);
+  return await property.jsonValue();
+}
