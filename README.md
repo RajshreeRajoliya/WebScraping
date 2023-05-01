@@ -1,2 +1,14 @@
-# WebScraping
-Web scraping using Puppeteer to extract job listings from https://remoteok.io.
+## Web Scraping Job Postings using Puppeteer.
+
+### Install
+```sh
+$ npm install
+$ npm install puppeteer
+
+```
+
+### Run
+```sh
+$ node index.js
+```
+
